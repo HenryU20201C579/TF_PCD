@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LUDO</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>LUDO</h1>
+      <h2>¡welcome to the game!</h2>
+    </header>
+
+    <main>
+      <form action="/start_game" method="post">
+        <div class="radio-group">
+          <label class="radio-label red">
+            <input type="radio" name="opcion" value="rojo" checked />
+            Red
+          </label>
+          <label class="radio-label blue">
+            <input type="radio" name="opcion" value="azul" />
+            Blue
+          </label>
+          <label class="radio-label green">
+            <input type="radio" name="opcion" value="verde" />
+            Green
+          </label>
+          <label class="radio-label yellow">
+            <input type="radio" name="opcion" value="amarillo" />
+            Yellow
+          </label>
+        </div>
+
+        <label for="maxObstaculos">
+          número de obstáculos:
+          <input type="number" name="maxObstaculos" min="1" max="10" value="1" />
+        </label>
+
+        <button type="submit">start</button>
+      </form>
+    </main>
+  </body>
+</html>
